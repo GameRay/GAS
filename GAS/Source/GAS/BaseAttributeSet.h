@@ -13,5 +13,10 @@ UCLASS()
 class GAS_API UBaseAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
+public:
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FGameplayAttributeData Life=100;
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	FGameplayAttributeData MaxLife=100;
 	
 };
